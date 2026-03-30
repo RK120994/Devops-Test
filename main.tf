@@ -49,7 +49,6 @@ module "lambda" {
   lambda_sg_id       = module.vpc.lambda_sg_id
   s3_bucket_name     = module.s3.bucket_name
 
-  # ✅ FIX: pass IAM role into module
   lambda_role_arn = aws_iam_role.lambda_role.arn
 }
 
