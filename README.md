@@ -66,32 +66,20 @@ The infrastructure is divided into three layers:
 
 Before running Terraform, configure your AWS account using the AWS CLI:
 
-```bash
 aws configure
-```
-
 Enter the following details:
-
 * AWS Access Key ID
 * AWS Secret Access Key
-* Default region (e.g., `us-east-1`)
-* Output format (press Enter for default)
-
----
+* Default region (`us-east-1`)
+* Output format (Json)
 
 # Initialize Terraform
 
-```bash
 terraform init
-```
-
----
 
 # Review Execution Plan
 
-```bash
 terraform plan
-```
 
  **Note:**
 > I did not run `terraform apply` to avoid AWS usage charges.
